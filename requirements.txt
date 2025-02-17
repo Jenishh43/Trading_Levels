@@ -1,0 +1,5 @@
+yfinance==0.2.48
+pandas==2.2.3
+numpy==2.1.2
+scipy==1.14.1
+mplfinance==0.12.10b0
