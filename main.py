@@ -16,4 +16,6 @@ def fetch_Data(ticker, period = "1mo" , accuracy = 5):
     
     support_level = filtered_data.iloc[argrelextrema(filtered_data['Low'].values, np.less_equal, order=accuracy)[0]]['Low'].values
 
-    return data, resistance_level, support_level
+    mpf.plot(data, type='candle', style='charles', title=f'{ticker} Candlestick Chart with Support/Resistance', ylabel='Price', ylabel_lower='Volume', volume=True, hlines=dict(hlines=list(resistance_level) + list(support_level), colors=['r']*len(resistance_level) + ['g']*len(support_level), linestyle='dashed'))
+
+    return
