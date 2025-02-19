@@ -18,7 +18,12 @@ This repository provides a tool to visualize stock trading levels using historic
 
 Install dependencies using:
 ```bash
-pip install yfinance pandas numpy scipy mplfinance
+pip install -r requiremens.txt
+```
+
+Upgrade dependencies 
+```bash
+pip install --upgrade yfinanc
 ```
 
 ## How to Run
@@ -45,6 +50,11 @@ pip install yfinance pandas numpy scipy mplfinance
 - **fetch_Data**: Fetches stock data, calculates support and resistance levels, and plots the candlestick chart.
 - **on_submit**: Handles user inputs from the GUI and calls `fetch_Data`.
 - **Tkinter GUI**: Provides an interface for the user to input parameters and visualize stock data.
+
+1.![image](https://github.com/user-attachments/assets/bc79dd2b-e0b3-4f66-92c1-b82e7b14fbde)
+
+2.![image](https://github.com/user-attachments/assets/0a3aef42-2a3a-4324-8919-7af73d2cefcf)
+
 
 ## License
 This project is licensed under the MIT License.
